@@ -1,7 +1,7 @@
 
 
 :root {
-    --ff-sans: Inter, system-ui, sans-serif;
+    --ff-sans: "Inter", system-ui, sans-serif;
 
     --fw-light: 200;
     --fw-normal: 400;
@@ -72,13 +72,29 @@ html {
 }
 .copy {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.location {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--light-green-clr);
+}
+.intro {
+    font-size: 0.9rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.6rem;
 }
 .links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
+.link a {
+    text-align: center;
+    border-radius: 8px;
+}
 .link a:link,
 .link a:visited {
     text-decoration: none;
